@@ -59,6 +59,7 @@ button.on("click", function clicked() {
   clickable = false;
   $(this).addClass("card__button--triggered");
   $("#num").removeClass("show-text");
+  $("#num").css({ "font-family": "" });
   $(this).off("click", clicked);
   var count = 40;
   var counter = setInterval(timer, 50);
@@ -78,6 +79,7 @@ button.on("click", function clicked() {
           $("#num").removeClass("show-text");
         }, 1200);
         setTimeout(function () {
+          $("#num").css({ "font-family": "'Noto Sans TC', sans-serif" });
           document.getElementById("num").innerHTML =
             classNumber2Name[
               idPool[randomResult][Object.keys(idPool[randomResult])[0]]
