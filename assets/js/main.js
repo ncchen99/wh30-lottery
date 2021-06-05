@@ -47,13 +47,6 @@ function containsObject(obj, list) {
 function removeByClassNumber(claasNumber) {
   for (i = 0; i < idPool.length; i++) {
     if (idPool[i][Object.keys(idPool[i])[0]] == claasNumber) {
-      console.log(idPool);
-      console.log(idPool[i]);
-      console.log(
-        i,
-        idPool[i][Object.keys(idPool[i])[0]],
-        classNumber2Name[idPool[i][Object.keys(idPool[i])[0]]]
-      );
       idPool.splice(i, 1);
       return true;
     }
@@ -67,7 +60,6 @@ button.on("click", function clicked() {
   $(this).addClass("card__button--triggered");
   $("#num").removeClass("show-text");
   $(this).off("click", clicked);
-  console.log(JSON.stringify(classNumber2Name));
   var count = 40;
   var counter = setInterval(timer, 50);
   var randomResult;
@@ -97,7 +89,6 @@ button.on("click", function clicked() {
             idPool[randomResult][Object.keys(idPool[randomResult])[0]];
           idPool.splice(randomResult, 1);
           var success = removeByClassNumber(removeClassNumber);
-          console.log(success);
           clickable = true;
         }, 1500);
       }, 1000);

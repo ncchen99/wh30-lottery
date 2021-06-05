@@ -301,7 +301,7 @@ body:before {
   height: 100%;
   border-style: solid;
   /* Spinner Color */
-  border-color: #0067f4 #0067f4 #e9ecef;
+  border-color: #fc6d6d #fc6d6d #e9ecef;
   border-radius: 50%;
   border-width: 6px;
 }

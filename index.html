@@ -2,68 +2,64 @@
 
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
-    <!-- Primary Meta Tags -->
-    <title>畢典抽獎 – 文華三十</title>
-    <meta name="title" content="畢典抽獎 – 文華三十">
-    <meta name="description" content="0607　🆙一起逃出烤箱，來一場冒險之旅吧！">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
+  <!-- Primary Meta Tags -->
+  <title>畢典抽獎 – 文華三十</title>
+  <meta name="title" content="畢典抽獎 – 文華三十">
+  <meta name="description" content="0607　🆙一起逃出烤箱，來一場冒險之旅吧！">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ncchen.cf/wh30-lottery">
-    <meta property="og:title" content="畢典抽獎 – 文華三十">
-    <meta property="og:description" content="0607　🆙一起逃出烤箱，來一場冒險之旅吧！">
-    <meta property="og:image" content="https://ncchen.cf/wh30-lottery/assets/image/cover.gif">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ncchen.cf/wh30-lottery">
+  <meta property="og:title" content="畢典抽獎 – 文華三十">
+  <meta property="og:description" content="0607　🆙一起逃出烤箱，來一場冒險之旅吧！">
+  <meta property="og:image" content="https://ncchen.cf/wh30-lottery/assets/image/cover.gif">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ncchen.cf/wh30-lottery">
-    <meta property="twitter:title" content="畢典抽獎 – 文華三十">
-    <meta property="twitter:description" content="0607　🆙一起逃出烤箱，來一場冒險之旅吧！">
-    <meta property="twitter:image" content="https://ncchen.cf/wh30-lottery/assets/image/cover.gif">
-    <!--====== Main CSS ======-->
-    <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ncchen.cf/wh30-lottery">
+  <meta property="twitter:title" content="畢典抽獎 – 文華三十">
+  <meta property="twitter:description" content="0607　🆙一起逃出烤箱，來一場冒險之旅吧！">
+  <meta property="twitter:image" content="https://ncchen.cf/wh30-lottery/assets/image/cover.gif">
 
+  <!--====== Apple CSS ======-->
+  <link rel="stylesheet" href="assets/css/apple.css">
 </head>
 
 <body>
-
-
-    <div class="preloader">
-        <div class="loader">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="newsletter slideIn">
+    <div class="newsletter__container">
+      <button class="btn__close" id="close-newsletter" title="close pop-up"></button>
+      <p class="newsletter__slogan">鄭重說明</p>
+      <h2 class="newsletter__header">本抽獎程式🧑‍💻<br>絕無黑箱造假</h2>
+      <p class="newsletter__instructions">根據MDN - Mozilla<br>Math.random()函數會回傳一個偽隨機小數(pseudo-random) 介於0到1之間(包含0​，不包含1)
+        ，大致符合數學與統計上的均勻分佈 (uniform distribution)<br>此運作中的Javascript原始碼亦可在
+        <a href="https://github.com/ncchen99/wh30-lottery/" class="link"
+          style="text-decoration: none; color:darkorchid">
+          Github
+        </a>檢視
+      </p>
+      <div class="newsletter__form">
+        <button class="btn btn__primary btn__primary--submit" id="send-email">
+          <svg class="plane" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xml:space="preserve" width="25px" height="21px" version="1.1" shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+            clip-rule="evenodd" viewBox="0 0 50000 41915">
+            <path class="plane_path" fill="#ffffff"
+              d="M1136 20505c2499,1209 8756,2983 11659,3729 731,177 1226,-313 1780,-661l23911 -14921c1255,-844 2216,-250 1066,764l-18913 17211c-605,547 -956,890 -1008,1782 -249,3042 -336,6549 -494,9739 -43,856 -87,1631 304,1304l7317 -6673 10685 7837c3160,2376 4277,1048 4622,-462 2195,-8652 5941,-26362 7759,-36179 695,-3288 -687,-4756 -3765,-3565 -8870,3429 -36548,14862 -43426,16898 -1416,419 -4199,1889 -1497,3197z" />
+          </svg>
+          <span class="action">
+            了解
+          </span>
+        </button>
+      </div>
     </div>
-
-
-    <div class="shadow"></div>
-    <div class="card">
-        <div class="card__overlay"></div>
-        <div class="card__button"></div>
-        <div class="card__counter">
-            <div id="num" class="card__counter__num">
-                抽
-            </div>
-        </div>
-    </div>
-    <!--======  JQuery ======-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+    <div class="newsletter__background"></div>
+  </div>
+  <div class="background darken"></div>
+  <script src="./assets/js/apple.js"></script>
 </body>
 
 </html>
