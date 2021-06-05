@@ -204,13 +204,14 @@ body {
   position: absolute;
   top: 2px;
   right: 2px;
-  background-color: black;
-  color: white;
+  background-color: lightblue;
+  color: black;
   padding: 0.5rem 1rem;
   font-size: 0.7rem;
+  box-shadow: 0 0 100px 0 black;
 }
 .design-by a {
-  color: white;
+  color: darkorchid;
   text-decoration: none;
 }
 .design-by a:hover {

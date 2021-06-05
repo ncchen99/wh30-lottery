@@ -574,3 +574,21 @@ body:before {
     transform: scale(1, 1);
   }
 }
+
+.design-by {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #343f4f;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  box-shadow: 0 0 100px 0 black;
+}
+.design-by a {
+  color: #f66e6e;
+  text-decoration: none;
+}
+.design-by a:hover {
+  text-decoration: underline;
+}
