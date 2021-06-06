@@ -3,8 +3,6 @@
 
 ### [主程式 main.js🤬](https://github.com/ncchen99/wh30-lottery/blob/master/assets/js/main.js)
 
-### 希望偶邏輯夠好該考慮ㄉ都有考慮到QQ
-
 ### 截圖
 ![](https://i.imgur.com/OJh4pqM.jpg)
 

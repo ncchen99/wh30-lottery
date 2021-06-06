@@ -34,8 +34,10 @@
       <button class="btn__close" id="close-newsletter" title="close pop-up"></button>
       <p class="newsletter__slogan">鄭重聲明</p>
       <h2 class="newsletter__header">本抽獎程式🧑‍💻<br>絕無黑箱造假</h2>
-      <p class="newsletter__instructions">根據MDN - Mozilla<br>Math.random()函數會回傳一個偽隨機小數(pseudo-random) 介於0到1之間(包含0​，不包含1)
-        ，大致符合數學與統計上的均勻分佈 (uniform distribution)<br>此運作中的Javascript原始碼亦可在
+      <p class="newsletter__instructions">本程式使用<a href="https://github.com/davidbau/seedrandom"
+          style="text-decoration: none; color:darkorchid"> seedrandom.js
+        </a>產生亂數結果，每次抽獎都會使用當前時間、DOM物件狀態、累積的局部熵等等作為種子，創建一個基於
+        ARC4 的 PRNG。<br>此運作中的Javascript原始碼亦可在
         <a href="https://github.com/ncchen99/wh30-lottery/" class="link"
           style="text-decoration: none; color:darkorchid">
           Github

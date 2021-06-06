@@ -30,6 +30,14 @@ function csvJSON(csv) {
   return JSON.stringify(result); //JSON
 }
 
+function unpredictableRandomNumber(min, max) {
+  // Calling seedrandom with no arguments creates an ARC4-based PRNG
+  // that is autoseeded using the current time, dom state, and other
+  // accumulated local entropy.
+  var prng = new Math.seedrandom();
+  return Math.floor(prng() * (max - min) + min); // Reasonably unpredictable.
+}
+
 function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
@@ -97,7 +105,8 @@ button.on("click", function clicked() {
 
       return;
     }
-    randomResult = randomNumber(0, idPool.length);
+    if (count === 0) randomResult = unpredictableRandomNumber(0, idPool.length);
+    else randomResult = randomNumber(0, idPool.length);
     document.getElementById("num").innerHTML = Object.keys(
       idPool[randomResult]
     )[0];
