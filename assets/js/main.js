@@ -1,5 +1,5 @@
 const csvFilePaths = [
-  "./assets/data/畢業活動抽獎名單 - 重複抽獎名單.csv",
+  // "./assets/data/畢業活動抽獎名單 - 重複抽獎名單.csv",
   "./assets/data/畢業活動抽獎名單 - IG抽獎名單.csv",
   "./assets/data/畢業活動抽獎名單 - Line抽獎名單.csv",
 ];
@@ -69,6 +69,7 @@ button.on("click", function clicked() {
   $("#num").removeClass("show-text");
   $("#num").css({ "font-family": "" });
   $(this).off("click", clicked);
+  console.log(idPool);
   var count = 40;
   var counter = setInterval(timer, 50);
   var randomResult;
