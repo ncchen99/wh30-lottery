@@ -69,7 +69,7 @@ button.on("click", function clicked() {
   $("#num").removeClass("show-text");
   $("#num").css({ "font-family": "" });
   $(this).off("click", clicked);
-  console.log(idPool);
+  // console.log(idPool);
   var count = 40;
   var counter = setInterval(timer, 50);
   var randomResult;
